@@ -4,6 +4,41 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Deprem Verileri</Title>
+    <Company>Sefa GUNDUZ</Company>
+    <Authors>Sefa GUNDUZ</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Deprem verileri Afad, Kandilli, USGS üzerinden okunur. Open Source.</Description>
+    <Copyright>Free</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/sefagunduz/DepremVerileri</RepositoryUrl>
+    <PackageTags>afad, kandilli, usgs</PackageTags>
+    <PackageReleaseNotes>stabil</PackageReleaseNotes>
+    <PackAsTool>True</PackAsTool>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
