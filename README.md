@@ -7,7 +7,12 @@ Afad verilerini siteden çekip okur
 
 USGS verilerini API üzerinden çekip Turkey kelimesi ile son depremlere göre filtreler.
 
+Nuget Paketini indirip kullanabilirsiniz (.NET 6)
 ```
+PM> NuGet\Install-Package DepremVerileri -Version 3.0.0
+```
+
+```cs
 using DepremVerileri;
 
 /* Afad üzerinden verileri çekme */
